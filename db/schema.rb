@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150721194146) do
+ActiveRecord::Schema.define(:version => 20150729061430) do
 
   create_table "campaigns", :force => true do |t|
     t.integer  "user_id"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20150721194146) do
     t.integer  "impression"
     t.string   "description"
     t.string   "code"
-    t.string   "type"
+    t.string   "image_type"
     t.string   "ad_size"
     t.string   "amount_type"
     t.decimal  "amount"
