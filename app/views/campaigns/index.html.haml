@@ -1,0 +1,13 @@
+%h1 Campaigns#index
+%table
+  %tr
+    %th{style: "width:50px"} ID
+    %th{style: "width:50px"} User
+    %th{style: "width:50px"} Description
+    %th{style: "width:50px"}
+  - @campaings.each do |c|
+    %tr
+      %td= c.id
+      %td= c.user.firstname
+      %td= c.description
+      %td= link_to "test#{c.id}", "www.google.com/id=#{c.id}"

@@ -1,11 +1,13 @@
 Adzerver::Application.routes.draw do
+  get "campaigns/index"
+
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   devise_for :users, :token_authentication_key => 'authentication_key'
   devise_for :users, :path_names => { :sign_up => "ponyeta"}
 
  
-
+  resources :campaigns
   resources :users, only: [:show, :edit, :update]
 
   %w( 404 422 500 ).each do |code|
