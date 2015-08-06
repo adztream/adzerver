@@ -1,10 +1,10 @@
 %h1 Campaigns#index
-%table
+%table.table
   %tr
-    %th{style: "width:50px"} ID
-    %th{style: "width:50px"} User
-    %th{style: "width:50px"} Description
-    %th{style: "width:50px"}
+    %th ID
+    %th User
+    %th Description
+    %th
   - @campaings.each do |c|
     %tr
       %td= c.id

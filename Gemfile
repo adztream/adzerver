@@ -9,6 +9,8 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '>= 1.0.3'
   gem 'spinjs-rails'
+  gem 'less'
+  gem 'less-rails'
 end
 
 group :development do
@@ -73,3 +75,4 @@ gem 'dalli'
 gem "memcachier"
 gem 'apns'
 gem 'foreman'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
